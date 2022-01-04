@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Сеть туристических комплексов</title>
+  </head>
+  <style type="text/css">
+  body{
+  width:100%;
+  font-family: verdana, geneva, sans-serif;
+  background:#e7ecf5;
+  overflow-x:hidden;
+}
+
+.container{
+  width:100%;
+  position: relative;
+  top:-10px;
+  
+
+}
+
+.header {
+  width:100%;
+  height:140px;
+  padding-bottom:80px;
+  position:fixed;
+  background:#ffffff;
+  z-index: 1;
+}
+
+.logo{
+  padding-left: 90px;
+  padding-top: 20px;
+  
+  
+}
+
+logo-description  {
+  font-size: 16px;
+  color: #535353;
+  
+} 
+
+.first {
+  display: inline;
+  position: fixed;
+  top: 35px;
+  left: 250px;
+  }
+
+.second {
+  display: inline;
+  position: fixed;
+  top: 60px;
+  left: 250px;
+  }
+
+.third {
+  display: inline;
+  position: fixed;
+  top: 85px;
+  left: 250px;
+  }
+
+.razdel{
+  display: inline;
+  position: fixed;
+  top: 25px;
+  left: 220px;
+  height: 90px;
+}
+
+ul {
+  margin: 0;
+  
+}
+
+nav a {
+  font-size: 18px;
+  color:#1A2B48;
+   text-decoration: none;
+   padding-right: 5px;
+}
+
+.menu-item-1 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 550px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-item-2 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 700px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-item-3 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 850px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-item-4 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 1100px;
+ color:#1A2B48;
+  list-style: none;
+  
+}
+
+.menu-item-5 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 1220px;
+  color:#1A2B48;
+  list-style: none;
+}
+
+.menu-item-6 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 1310px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-item-7 {
+ display: inline-block;
+ position: fixed;
+  top:55px;
+  left: 1430px;
+ list-style: none;
+  font-weight: bold;
+}
+
+
+
+.submenu {
+position: fixed;
+ left:1060px;
+  z-index: 9;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  
+}
+
+.submenu {
+  display: none;
+  background: #ffffff ;
+  width: 140px;
+  text-align: center;
+}
+
+.submenu a{
+  color:#1A2B48;
+  text-decoration: bolder;
+  font-size: 17px;
+  font-weight: none;
+}
+
+
+.one ul li:hover .submenu {
+  display: block;
+  padding-left: 20px;
+  padding-right: 6px;
+  padding-top: 10px;
+  
+}
+
+.menu-item-01 {
+   padding-bottom: 8px;
+   padding-right: 19px;
+list-style: none;
+ 
+}
+
+.menu-item-02 {
+   padding-bottom: 8px;
+   padding-right: 19px;
+ list-style: none;
+}
+
+.menu-item-03 {
+   padding-bottom: 8px;
+   padding-right: 19px;
+  list-style: none;
+ }
+
+.menu-item-04 {
+   padding-bottom: 8px;
+   padding-right: 19px;
+ list-style: none;
+}
+
+.submenu2 {
+position: fixed;
+ left:1170px;
+  z-index: 9;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  
+  
+}
+
+.submenu2 {
+  display: none;
+  background: #ffffff ;
+  width: 140px;
+  text-align: center;
+}
+
+.submenu2 a{
+  color:#1A2B48;
+  text-decoration: bolder;
+  font-size: 17px;
+}
+
+
+.one ul li:hover .submenu2 {
+  display: block;
+  padding-left: 20px;
+  padding-right: 6px;
+  padding-top: 10px;
+  
+}
+
+.menu-item-001 {
+   padding-bottom: 13px;
+   padding-right: 19px;
+list-style: none;
+ 
+}
+
+.menu-item-002 {
+   padding-bottom: 13px;
+   padding-right: 19px;
+ list-style: none;
+}
+
+.discount {
+  position: static;
+  background: #5191fa;
+  width: 1000px;
+  height:20px;
+  margin-left: 370px;
+   margin-top: -14px;
+  padding-left: 190px;
+  padding-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  
+}
+
+.text-disc {
+ font-size: 20px;
+ color:#ffffff;
+ font-weight: bold;
+  text-align: center;
+  display: inline;
+
+  
+}
+
+.decor{
+ position: absolute;
+ top: 100px;
+ left: 370px;
+}
+
+.decor2{
+ position: absolute;
+ top: 100px;
+ right: 300px;
+}
+
+.content{
+ position:static;
+  width:100%;
+  height:auto;
+}
+
+.banner {
+  position: static;
+  padding-top:220px;
+  width:100%;
+  height:auto;
+  }
+
+.info1{
+  width: 480px;
+  height: 1000px;
+   position: static;
+  margin-top: 40px;
+  margin-left: 100px;
+  background:#ffffff;
+  border-radius: 30px;
+}
+
+.tur1 {
+  position: static;
+  padding-top: 40px;
+  padding-left: 55px;
+}
+
+.button1{
+ width: 390px;
+  height: 100px;
+  background:#31cb4b;
+  border: none;
+   position: static;
+  margin-top: 20px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.button1 {
+  color:#ffffff;
+}
+
+.hand{
+  width: 25px;
+}
+
+.feedback1 {
+   width: 170px;
+  height: 35px;
+  background:#f9f7f7;
+  border: none;
+   position: static;
+  margin-top: 25px;
+  margin-left: 47px;
+  padding-top: 5px;
+  border-radius: 60px;
+  font-size: 14px;
+  color:#666666;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.advert1 {
+  font-family: verdana, geneva, sans-serif;
+  color:#FF8C00;
+  position: static;
+  font-size: 26px;
+  text-align:center;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+ }
+
+.d1 {
+   font-family: verdana, geneva, sans-serif;
+  font-size: 18px;
+  color:#31cb4b;
+   position: static;
+  padding-bottom:18px;
+  padding-top:5px;
+}
+
+.d11{
+  color:#1A2B48;
+}
+
+.d2 {
+   font-family: verdana, geneva, sans-serif;
+  font-size: 18px;
+  color:#31cb4b;
+   position: static;
+  padding-bottom:18px;
+  padding-top:5px;
+  padding-right:12px;
+}
+
+.d3 {
+   font-family: verdana, geneva, sans-serif;
+  font-size: 18px;
+  color:#31cb4b;
+   position: static;
+  padding-bottom:18px;
+  padding-top:5px;
+  padding-right:20px;
+}
+
+.allinc1{
+ width: 390px;
+  height: 50px;
+  background:#EFEFEF;
+  border: none;
+   position: static;
+  margin-top: 20px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.allinc1{
+  color:#31cb4b;
+}
+
+.podrob1{
+  width: 390px;
+  height: 70px;
+  background:#00A3DD;
+  border: none;
+   position: static;
+  margin-top: 20px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.podrob11{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.info2{
+  width: 480px;
+  height: 1000px;
+  position: static;
+  margin-top: -1004px;
+  margin-left: 710px;
+  background:#ffffff;
+  border-radius: 30px;
+}
+
+.button2{
+ width: 390px;
+  height: 100px;
+  background:#31cb4b;
+  border: none;
+   position: static;
+  margin-top: 20px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.button2 {
+  color:#ffffff;
+}
+
+.tur2 {
+  position: static;
+  padding-top: 40px;
+  padding-left: 55px;
+}
+
+.feedback2 {
+   width: 170px;
+  height: 35px;
+  background:#f9f7f7;
+  border: none;
+   position: static;
+  margin-top: 25px;
+  margin-left: 47px;
+  padding-top: 5px;
+  border-radius: 60px;
+  font-size: 14px;
+  color:#666666;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.hand2{
+  width: 25px;
+}
+
+.advert2 {
+  font-family: verdana, geneva, sans-serif;
+  color:#FF8C00;
+  position: static;
+  font-size: 26px;
+  text-align:center;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+ }
+
+.info3{
+  width: 480px;
+  height: 1000px;
+  position: static;
+  margin-top: -1004px;
+  margin-left: 1300px;
+  background:#ffffff;
+  border-radius: 30px;
+}
+
+.button3{
+ width: 390px;
+  height: 100px;
+  background:#31cb4b;
+  border: none;
+   position: static;
+  margin-top: 20px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.button3 {
+  color:#ffffff;
+}
+
+.tur3 {
+  position: static;
+  padding-top: 40px;
+  padding-left: 55px;
+}
+
+.feedback3 {
+   width: 170px;
+  height: 35px;
+  background:#f9f7f7;
+  border: none;
+   position: static;
+  margin-top: 25px;
+  margin-left: 47px;
+  padding-top: 5px;
+  border-radius: 60px;
+  font-size: 14px;
+  color:#666666;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.hand3{
+  width: 25px;
+}
+
+.advert3 {
+  font-family: verdana, geneva, sans-serif;
+  color:#FF8C00;
+  position: static;
+  font-size: 26px;
+  text-align:center;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+ }
+
+.allinc2{
+ width: 390px;
+  height: 50px;
+  background:#EFEFEF;
+  border: none;
+   position: static;
+  margin-top: 40px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.podrob2{
+  width: 390px;
+  height: 70px;
+  background:#00A3DD;
+  border: none;
+   position: static;
+  margin-top: 20px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+.allinc22{
+  color:#31cb4b;
+}
+
+.allinc22{
+ width: 390px;
+  height: 50px;
+  background:#EFEFEF;
+  border: none;
+   position: static;
+  margin-top: 40px;
+  margin-left: 41px;
+  border-radius: 60px;
+  font-size: 17px;
+   font-family: verdana, geneva, sans-serif;
+}
+
+
+.socialm {
+  position: relative;
+  width:100%;
+  padding-bottom:800px;
+  height:340px;
+  margin-top:50px;
+  padding-bottom:80px;
+  margin-bottom: -20px;
+  background:#ffffff;
+}
+
+.connect{
+  font-size: 37px;
+   font-family: verdana, geneva, sans-serif;
+  padding-left: 750px;
+  padding-top: 50px;
+  color: #333333;
+}
+
+.connect2{
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  padding-left: 540px;
+  padding-top: 3px;
+  color: #333333;
+}
+
+.messenger{
+  position: static;
+    width: 80px;
+  padding-left: 600px;
+  padding-top: 30px;
+}
+
+.messenger1{
+   padding-left: 590px;
+  padding-top: 3px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #333333;
+  
+}
+
+.viber{
+  position: absolute;
+ top: 208px;
+  width: 80px;
+  padding-left: 880px;
+}
+
+.viber1{
+  position: absolute;
+ top: 294px;
+ padding-left: 895px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #333333;
+}
+
+.telega{
+  position: absolute;
+ top: 208px;
+  width: 80px;
+  padding-left: 1150px;
+}
+
+.telega1{
+  position: absolute;
+ top: 294px;
+ padding-left: 1145px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #333333;
+}
+
+.footer {
+  position: relative;
+  width:100%;
+  padding-bottom:800px;
+  height:290px;
+  padding-bottom:80px;
+  background:#3f3f3f;
+}
+
+.karta{
+  padding-top: 90px;
+  padding-left: 300px;
+  font-size: 25px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.turi a{
+  padding-left: 300px;
+  padding-top: 110px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.partneram a{
+  position: absolute;
+   top: 140px;
+   padding-left: 800px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.blog a{
+   position: absolute;
+   top: 180px;
+   padding-left: 800px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.otzivi a{
+  position: absolute;
+   top: 220px;
+   padding-left: 800px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.kontacti a{
+  position: absolute;
+   top: 260px;
+   padding-left: 800px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cont11 {
+  position: absolute;
+  top: 54px;
+  padding-left: 1300px;
+  font-size: 25px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.tel1 a{
+  position: absolute;
+  top: 138px;
+   padding-left: 1300px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tel2 a{
+  position: absolute;
+  top: 178px;
+   padding-left: 1300px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tel3 a{
+  position: absolute;
+  top: 218px;
+   padding-left: 1300px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tel4 a{
+  position: absolute;
+  top: 258px;
+   padding-left: 1300px;
+  font-size: 20px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bottom{
+  position: relative;
+  width:100%;
+  padding-bottom:800px;
+  height: 20px;
+  padding-bottom:80px;
+  background:#333333;
+}
+
+.prava{
+  position: absolute;
+  top: 27px;
+   padding-left: 100px;
+  font-size: 15px;
+   font-family: verdana, geneva, sans-serif;
+  color: #ffffff;
+}
+</style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img class="logo" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629111671127.png" width="100px">
+      <div class="logo-description">
+        <img class="razdel" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629120932717.png">
+        <a class="first">СЕТЬ</a>
+        <a class="second">ТУРИСТИЧЕСКИХ</a>
+        <a class="third">КОМПЛЕКСОВ</a>
+        
+        <nav class="one">
+           <ul class="menu">
+<li class="menu-item-1">
+  <a target="_blank" href="https://tur365.com.ua/ru/tours/">ТУРЫ 365</a></li>
+<li class="menu-item-2"><a target="_blank" href="https://tur365.com.ua/ru/hotels/">ОТЕЛИ 365</a></li>
+<li class="menu-item-3"><a target="_blank" href="https://tur365.com.ua/ru/otdyh-v-karpatah/">ОТДЫХ В КАРПАТАХ</a></li>
+<li class="menu-item-4"><atarget="_blank" href="https://tur365.com.ua/ru/uslugy-truskavets/"><strong>УСЛУГИ</strong></a>
+  <ul class="submenu">
+        <li class="menu-item-01"><a target="_blank" href="https://tur365.com.ua/ru/uslugy-truskavets/">Трускавец</a></li>
+        <li class="menu-item-02"><a target="_blank" href="https://tur365.com.ua/ru/uslugi-karpaty-vorohta/">Ворохта</a></li>
+        <li class="menu-item-03"><a target="_blank" href="https://tur365.com.ua/ru/uslugi-cherkashhina/">Черкащина</a></li>
+        <li class="menu-item-04"><a a target="_blank" href="https://tur365.com.ua/ru/uslugy-kyev/">Киев</a></li>
+      </ul>
+</li>
+    <li class="menu-item-5"><a target="_blank" href="https://tur365.com.ua/ru/blog/"><strong>БЛОГ</strong></a>
+      <ul class="submenu2">
+        <li class="menu-item-001"><a target="_blank" href="https://tur365.com.ua/ru/uslugy-truskavets/">Полезное</a></li>
+        <li class="menu-item-002"><a target="_blank" href="https://tur365.com.ua/ru/uslugi-karpaty-vorohta/">Конкурс</a></li>
+      </ul>
+    </li>
+         <li class="menu-item-6"><a target="_blank" href="https://tur365.com.ua/ru/otzyvy-tur/">ОТЗЫВЫ</a></li> 
+            <li class="menu-item-7"><a target="_blank" href="https://tur365.com.ua/ru/kontakty/">КОНТАКТЫ</a></li>
+</ul>
+  </nav>
+        </div>
+       <div class="discount">
+         <p class="text-disc"> До 20 августа скидка на раннее бронирование на туры с 19.09! </p>
+         <img class="decor" src="https://pics.esputnik.com/repository/home/73981/images/msg/2606482/1629193072604.png">
+          <img class="decor2" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629198429156.png">
+        </div>
+      </div>
+      <div class="content">
+        <img class="banner" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629213695085.png"
+             </div>
+      
+        <div class="info1">
+             <img class="tur1" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629293775355.png">
+              <button class="button1" style="vertical-align: middle"><strong> НЕДЕЛЬНЫЙ ТУР ТРУСКАВЕЦ 365 – КАРПАТЫ – ЛЬВОВ – ЗАКАРПАТЬЕ – ПОЛЬША </strong></button>
+          
+          <button class="feedback1" style="vertical-align: middle"><strong>  <img class="hand" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629296419517.png" 
+          style="vertical-align: middle"> 1385 Отзывов  </strong></button>
+         <p class="advert1"> ВСЕ ВКЛЮЧЕНО в стоимость от <strong>3 690 грн</strong> за неделю </p>
+     <p class="list1">
+             <ul>
+ <li class="d1"><span class="d11">Проживание 7 дней, 6 ночей в отеле Трускавец 365 </span>
+</li>
+               <li class="d2"><span class="d11">Ежедневные экскурсии и походы по Карпатам</span></li>
+               <li class="d3"><span class="d11">Завтраки и ужины по системе "шведский стол"</span></li>
+</ul>
+          <button class="allinc1" style="vertical-align: middle"><strong> ВЕСЬ СПИСОК ВСЕ ВКЛЮЧЕНО </strong></button>
+          
+          <button class="podrob1" style="vertical-align: middle"><a class="podrob11" target="_blank" href="https://tur365.com.ua/ru/tours/nedelnyj-tur-truskavets-365-karpaty-lvov-zakarpate/"><strong> ПОДРОБНЕЕ </a> </strong></button>
+        </div>
+        
+        <div class="info2">
+             <img class="tur2" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629457903655.png">
+              <button class="button2" style="vertical-align: middle"><strong> НЕДЕЛЬНЫЙ ТУР ВОРОХТА 365 – ГОВЕРЛА – БУКОВЕЛЬ  </strong></button>
+          
+          <button class="feedback2" style="vertical-align: middle"><strong>  <img class="hand2" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629296419517.png" 
+          style="vertical-align: middle"> 2087 Отзывов  </strong></button>
+         <p class="advert2"> ВСЕ ВКЛЮЧЕНО в стоимость от <strong>3 150 грн</strong> за неделю </p>
+     <p class="list2">
+             <ul>
+ <li class="d1"><span class="d11">Проживание 7 дней, 6 ночей в отеле Ворохта 365 </span>
+</li>
+               <li class="d2"><span class="d11">Ежедневные экскурсии и походы по Карпатам</span></li>
+               <li class="d3"><span class="d11">Сытные завтраки и поздние обеды</span></li>
+</ul>
+          <button class="allinc22" style="vertical-align: middle"><strong> ВЕСЬ СПИСОК ВСЕ ВКЛЮЧЕНО </strong></button>
+          
+          <button class="podrob2" style="vertical-align: middle"><a class="podrob11" target="_blank" href="https://tur365.com.ua/ru/tours/nedelnyj-tur-karpaty-vorohta-kruglyj-god/"><strong> ПОДРОБНЕЕ </a> </strong></button>
+        </div>
+        
+        
+         <div class="info3">
+             <img class="tur3" src="https://pics.esputnik.com/repository/home/73981/images/msg/2687107/1630409834869.png">
+              <button class="button3" style="vertical-align: middle"><strong> ТРЁХДНЕВНЫЙ ТУР "КИЕВ 365"  </strong></button>
+          
+          <button class="feedback3" style="vertical-align: middle"><strong>  <img class="hand3" src="https://pics.esputnik.com/repository/home/73981/images/msg/2672477/1629296419517.png" 
+          style="vertical-align: middle"> 100 Отзывов  </strong></button>
+         <p class="advert2"> ВСЕ ВКЛЮЧЕНО в стоимость от <strong>2 700 грн</strong> за неделю </p>
+     <p class="list2">
+             <ul>
+ <li class="d1"><span class="d11">Проживание в комфортных номерах уровня 4 звезды </span>
+</li>
+               <li class="d2"><span class="d11">2 завтрака, поздний обед, праздничный ужин</span></li>
+               <li class="d3"><span class="d11">Ежедневные экскурсии и мероприятия, продуманные до мелочей</span></li>
+</ul>
+          <button class="allinc1" style="vertical-align: middle"><strong> ВЕСЬ СПИСОК ВСЕ ВКЛЮЧЕНО </strong></button>
+          
+          <button class="podrob1" style="vertical-align: middle"><a class="podrob11" target="_blank" href="https://tur365.com.ua/ru/tours/trehdnevnyj-tur-kyev-365/"><strong> ПОДРОБНЕЕ </a> </strong></button>
+        </div>
+        
+          <div class="socialm">
+            <p class="connect"> Свяжитесь с нами! </p>
+            <p class="connect2"> Мы с радостью поможем спланировать Ваше незабываемое путешествие! </p>
+            <a href="https://m.me/tur365official" target="_blank"> <img class="messenger" src="https://pics.esputnik.com/repository/home/73981/images/msg/2687107/1630415993006.png"> </a>
+            <p class="messenger1"> Messenger </p>
+            
+            <a href="viber://pa?chatURI=hotel365" target="_blank"> <img class="viber" src="https://pics.esputnik.com/repository/home/73981/images/msg/2687107/1630416460170.png"> </a>
+            <p class="viber1"> Viber </p>
+            
+            <a href="http://telegram.me/tur365official_bot" target="_blank"> <img class="telega" src="https://pics.esputnik.com/repository/home/73981/images/msg/2681962/1631004828263.png"> </a>
+            <p class="telega1"> Telegram </p>
+        </div>
+        
+        <div class="footer">
+          <div class="stolb1">
+            <p class="karta"> Карта сайта </p> 
+            <p class="turi"><a target="_blank" href="https://tur365.com.ua/ru/tours/"> Туры 365 </a> </p>
+             <p class="turi"><a target="_blank" href="https://tur365.com.ua/ru/hotels/"> Отели 365 </a> </p>
+            
+            <p class="turi"><a target="_blank" href="https://tur365.com.ua/ru/razvlechenyya/"> Развлечения </a> </p>
+            <p class="turi"><a target="_blank" href="https://tur365.com.ua/ru/lechenye/"> Лечение </a> </p>
+          </div>
+          
+          <div class="stolb2">
+             <p class="partneram"><a target="_blank" href="https://tur365.com.ua/ru/partneram/"> Партнерам </a> </p>
+            <p class="blog"><a target="_blank" href="https://tur365.com.ua/ru/blog/"> Блог </a> </p>
+            <p class="otzivi"><a target="_blank" href="https://tur365.com.ua/ru/otzyvy-tur/"> Отзывы </a> </p>
+            
+             <p class="kontacti"><a target="_blank" href="https://tur365.com.ua/ru/kontakty/"> Контакты </a> </p>
+          </div>
+          
+          <div class="stolb3">
+             <p class="cont11"> Контакты </p> 
+            <p class="tel1"><a target="_blank" href="tel:0800331365"> 0-800-331-365 (Бесплатно) </a> </p>
+             <p class="tel2"><a target="_blank" href="tel:+380675240524"> +38(067) 524-0-524 (Ворохта 365) </a> </p>
+            
+            <p class="tel3"><a target="_blank" href="tel:+380973654365"> +38(097) 365-4-365 (Трускавец 365) </a> </p>
+            <p class="tel4"><a target="_blank" href="tel:+380983657365"> +38(098) 365-7-365 (Черкащина 365) </a> </p>
+          </div>
+        </div>
+        <div class="bottom">
+          <p class="prava"> © 2014 - 2021 ОТДЫХ 365. Все права защищены.
+ </p> 
+        </div>
+            
+            
+            
+            
+           
+</body>
+      </html>
